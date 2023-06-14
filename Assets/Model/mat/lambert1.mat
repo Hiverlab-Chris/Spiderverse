@@ -21,12 +21,12 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: lambert1
-  m_Shader: {fileID: -6465566751694194690, guid: b70a773d313a7ba41bcabca4f741dca1,
+  m_Shader: {fileID: -6465566751694194690, guid: 4993739b49f6e124183296e5758d0ef4,
     type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 1
+  m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -35,11 +35,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_97C8EC94:
-        m_Texture: {fileID: 2800000, guid: 4ba8a81732c90384fa23a27c228c20b1, type: 3}
+        m_Texture: {fileID: 2800000, guid: 5cc32b4085231cf4b9c2d06eb8d58dab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_DB342F0C:
-        m_Texture: {fileID: 2800000, guid: b72aca6a78bb5674e81e87aa7e3d140c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6d51f5d81456dd9428e2146bcf8b7bc1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -71,6 +71,10 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal_Map:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -108,22 +112,33 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - Vector1_1DEF9DF4: 19
-    - Vector1_3C3B6420: -1
+    - Vector1_1DEF9DF4: 18
+    - Vector1_3C3B6420: 0
     - Vector1_41D60F9E: 1
-    - Vector1_9605CCA4: 7.5
+    - Vector1_9605CCA4: 6.6
     - Vector1_BD0188E6: 1
     - _AlphaClip: 0
     - _Blend: 0
+    - _BlendOp: 0
     - _BumpScale: 1
+    - _CameraFadingEnabled: 0
+    - _CameraFarFadeDistance: 2
+    - _CameraNearFadeDistance: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
+    - _ColorMode: 0
     - _Cull: 2
     - _Cutoff: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
+    - _DistortionBlend: 0.5
+    - _DistortionEnabled: 0
+    - _DistortionStrength: 1
+    - _DistortionStrengthScaled: 0.1
     - _DstBlend: 0
     - _EnvironmentReflections: 1
+    - _FlipbookBlending: 0
+    - _FlipbookMode: 0
     - _GlossMapScale: 1
     - _Glossiness: 0
     - _GlossyReflections: 1
@@ -136,6 +151,9 @@ Material:
     - _ReceiveShadows: 1
     - _Smoothness: 0
     - _SmoothnessTextureChannel: 0
+    - _SoftParticlesEnabled: 0
+    - _SoftParticlesFarFadeDistance: 1
+    - _SoftParticlesNearFadeDistance: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
@@ -143,18 +161,20 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_69834944: {r: 1, g: 0.5362312, b: 0.25943398, a: 0}
-    - Color_6A162E48: {r: 1, g: 0.5922152, b: 0.28773582, a: 0}
-    - Color_6C9C775A: {r: 1, g: 1, b: 1, a: 0}
-    - Color_9A9462B: {r: 0.43529412, g: 0, b: 0.02046004, a: 0}
+    - Color_69834944: {r: 1, g: 0.7469876, b: 0, a: 0}
+    - Color_6A162E48: {r: 0.990566, g: 0.5961785, b: 0.3037113, a: 0}
+    - Color_6C9C775A: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 0}
+    - Color_9A9462B: {r: 0, g: 0, b: 0, a: 0}
     - Color_D2A04608: {r: 1, g: 1, b: 1, a: 0}
     - Color_D840FCE7: {r: 1, g: 1, b: 1, a: 0}
     - _BaseColor: {r: 0.7353569, g: 0.7353569, b: 0.7353569, a: 1}
+    - _BaseColorAddSubDiff: {r: 0, g: 0, b: 0, a: 0}
+    - _CameraFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _Color: {r: 0.7353569, g: 0.7353569, b: 0.7353569, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _L1_color: {r: 1, g: 1, b: 1, a: 1}
-    - _L1_dir: {r: 0, g: 1, b: 0, a: 0}
-    - _L2_color: {r: 1, g: 0.30874828, b: 0, a: 0}
+    - _L1_color: {r: 2, g: 2, b: 2, a: 0.99}
+    - _L1_dir: {r: 0.3213938, g: 0.76604444, b: -0.5566705, a: 0}
+    - _L2_color: {r: 1, g: 1, b: 1, a: 0}
     - _L2_dir: {r: 0, g: 0, b: 0, a: 0}
     - _L3_color: {r: 0, g: 0, b: 0, a: 0}
     - _L3_dir: {r: 0, g: 0, b: 0, a: 0}
@@ -164,6 +184,7 @@ Material:
     - _L5_dir: {r: 0, g: 0, b: 0, a: 0}
     - _L6_color: {r: 1, g: 1, b: 1, a: 0}
     - _L6_dir: {r: 0, g: 0, b: 0, a: 0}
+    - _SoftParticleFadeParams: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Tile: {r: 2, g: 2, b: 0, a: 0}
   m_BuildTextureStacks: []

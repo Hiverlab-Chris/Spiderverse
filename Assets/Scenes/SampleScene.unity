@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 410087041}
   - component: {fileID: 410087040}
   - component: {fileID: 410087042}
+  - component: {fileID: 410087043}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -238,6 +239,22 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &410087043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b447d5839962ad43b59dfcd7d76c5f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  amountIntensity: 2.5
+  amountRange: 0.3
+  amountPos: 0
+  speed: 1
 --- !u!1 &558344216
 GameObject:
   m_ObjectHideFlags: 0
@@ -359,6 +376,11 @@ PrefabInstance:
       propertyPath: m_ClearFlags
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8030541752544085182, guid: ae74821d62797cc43ac3feabd9df8fcb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8030541752544085183, guid: ae74821d62797cc43ac3feabd9df8fcb,
         type: 3}
       propertyPath: m_LightEstimation
@@ -435,6 +457,11 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 4776765576899091622, guid: 3738bd65ede154463b2c35064b9e5fdb,
         type: 3}
+    - target: {fileID: 8030541752843095853, guid: ae74821d62797cc43ac3feabd9df8fcb,
+        type: 3}
+      propertyPath: m_DetectionMode
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae74821d62797cc43ac3feabd9df8fcb, type: 3}
 --- !u!1 &1513018050 stripped
@@ -456,7 +483,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1513018050}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4dea56a9eaadd1c439095de4f9a371cb, type: 3}
   m_Name: 
@@ -499,3 +526,75 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!114 &1513018057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8030541752843095853, guid: ae74821d62797cc43ac3feabd9df8fcb,
+    type: 3}
+  m_PrefabInstance: {fileID: 1513018049}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513018050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1513018060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513018050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73a025b51106444e18fb408fde19ac53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AutomaticPlacement: 1
+  m_EnvironmentTextureFilterMode: 2
+  m_EnvironmentTextureHDR: 1
+  m_DebugPrefab: {fileID: 0}
+--- !u!114 &1513018061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513018050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bb53e960a0c46d42a1851062bf5c012, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PlacedPrefab: {fileID: 5442131439345368264, guid: a2cedac009bb4ba438077a0a50bab49c,
+    type: 3}
+  m_MaxNumberOfObjectsToPlace: 1
+  m_CanReposition: 1
+--- !u!114 &1513018062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513018050}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78fac4128669d6e4885a5862a5ea5da1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DisableFeaturePoints: 1
+  m_DisablePlaneRendering: 1
+  m_PointCloudManager: {fileID: 0}
+  m_PlaneManager: {fileID: 1513018057}
+--- !u!114 &1964602097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1513018051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e3c44306fb1e439a9f18b2212b8ab70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
